@@ -19,6 +19,7 @@ import {
 } from "../../utils/validation";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign } from "@expo/vector-icons";
+import { StatusBar } from "expo-status-bar";
 
 const AddCustomerScreen = ({ navigation }) => {
   const [f_name, setFName] = useState("");
@@ -98,6 +99,8 @@ const AddCustomerScreen = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.formContainer}>
+      <StatusBar barStyle="dark-content" backgroundColor="#fff" />
+
       <View style={styles.headerContainer}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <AntDesign name="arrowleft" size={24} color="black" />

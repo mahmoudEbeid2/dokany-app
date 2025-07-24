@@ -11,6 +11,7 @@ import {
 import { sellerAPI } from "../../utils/api/api";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign } from "@expo/vector-icons";
+import { StatusBar } from "expo-status-bar";
 
 const CustomerDetailsScreen = ({ route, navigation }) => {
   const { customer } = route.params;
@@ -59,6 +60,8 @@ const CustomerDetailsScreen = ({ route, navigation }) => {
 
   return (
     <SafeAreaView style={styles.detailsContainer}>
+      <StatusBar barStyle="dark-content" backgroundColor="#fff" />
+
       <View style={styles.headerContainer}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <AntDesign name="arrowleft" size={24} color="black" />
