@@ -14,6 +14,7 @@ import { useFocusEffect } from "@react-navigation/native";
 import { AntDesign, Feather } from "@expo/vector-icons";
 import { sellerAPI } from "../../utils/api/api";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { StatusBar } from "expo-status-bar";
 
 const CustomersListScreen = ({ navigation }) => {
   const [customers, setCustomers] = useState([]);
@@ -90,6 +91,7 @@ const CustomersListScreen = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar barStyle="dark-content" backgroundColor="#fff" />
       <View style={styles.headerContainer}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <AntDesign name="arrowleft" size={24} color="black" />
