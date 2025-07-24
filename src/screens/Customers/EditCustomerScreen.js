@@ -9,6 +9,7 @@ import {
   Alert,
   ScrollView,
   StyleSheet,
+  StatusBar,
 } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import { sellerAPI } from "../../utils/api/api";
@@ -19,7 +20,6 @@ import {
 } from "../../utils/validation";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign } from "@expo/vector-icons";
-import { StatusBar } from "expo-status-bar";
 
 const EditCustomerScreen = ({ route, navigation }) => {
   const { customer } = route.params;
