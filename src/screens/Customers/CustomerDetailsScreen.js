@@ -7,11 +7,11 @@ import {
   Alert,
   ScrollView,
   StyleSheet,
+  StatusBar,
 } from "react-native";
 import { sellerAPI } from "../../utils/api/api";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign } from "@expo/vector-icons";
-import { StatusBar } from "expo-status-bar";
 
 const CustomerDetailsScreen = ({ route, navigation }) => {
   const { customer } = route.params;
