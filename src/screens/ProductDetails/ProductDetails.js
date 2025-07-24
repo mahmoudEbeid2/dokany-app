@@ -37,7 +37,7 @@ const ProductDetails = ({ navigation, route}) => {
           `${API}/products/${productId}`
         );
         const data = await response.json();
-        console.log("Product:", data);
+        // console.log("Product:", data);
         setProduct(data);
       } catch (error) {
         console.error("Error fetching product:", error);
@@ -55,7 +55,7 @@ const ProductDetails = ({ navigation, route}) => {
           }
         );
         const data = await response.json();
-        console.log("Reviews:", data);
+        // console.log("Reviews:", data);
         setReviews(data);
       } catch (error) {
         console.error("Error fetching reviews:", error);
@@ -287,7 +287,7 @@ const styles = StyleSheet.create({
     // textAlign: '',
   },
   price: {
-    fontSize: 16,
+    fontSize: 14,
     marginVertical: 8,
     color: "#665491",
   },
@@ -307,7 +307,7 @@ const styles = StyleSheet.create({
   description: {
     marginVertical: 10,
     fontSize: 16,
-    color: "#121217",
+    color: "#665491",
   },
   backButton: {
     marginTop: 20,
