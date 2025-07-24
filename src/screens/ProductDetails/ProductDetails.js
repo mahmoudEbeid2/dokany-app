@@ -307,7 +307,7 @@ const styles = StyleSheet.create({
   description: {
     marginVertical: 10,
     fontSize: 16,
-    color: "#665491",
+    color: "#121217",
   },
   backButton: {
     marginTop: 20,
