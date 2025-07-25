@@ -9,12 +9,12 @@ import {
   ActivityIndicator,
   Alert,
   StyleSheet,
+  StatusBar,
 } from "react-native";
 import { useFocusEffect } from "@react-navigation/native";
 import { AntDesign, Feather } from "@expo/vector-icons";
 import { sellerAPI } from "../../utils/api/api";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { StatusBar } from "expo-status-bar";
 
 const CustomersListScreen = ({ navigation }) => {
   const [customers, setCustomers] = useState([]);
